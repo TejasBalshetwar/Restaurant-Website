@@ -5,7 +5,6 @@ if (isset($_GET['food_id'])) {
 
     $food_id = $_GET['food_id'];
     // get details of food
-
     $sql = "SELECT * FROM tbl_food WHERE id =$food_id ";
     $res = mysqli_query($conn, $sql);
     $count = mysqli_num_rows($res);
